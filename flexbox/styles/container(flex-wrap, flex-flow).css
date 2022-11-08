@@ -28,3 +28,6 @@ item들의 크기 및 속성을 유지시킨다. */
   border: 5px solid green;
   font-size: 30px;
 }
+
+/* 2. flex - wrap ( flex direction 과 flex wrap 의 합 단축기*
+예 flex-flow: row warp/
