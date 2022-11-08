@@ -1,0 +1,46 @@
+div {
+  width: 100px;
+  height: 200px;
+  border: 5px solid seagreen;
+
+  border-radius: 30px;
+
+}
+
+.korea1 {
+  background-color: blue;
+  animation: my-first-animation 1s infinite;
+  animation-delay: 0.3s;
+}
+
+.korea2 {
+  background-color: aqua;
+  animation: my-first-animation 1s infinite;
+  animation-delay: 0.6s;
+}
+
+.korea3 {
+  background-color: chartreuse;
+  animation: my-first-animation 1s infinite;
+  animation-delay: 0.9s;
+}
+
+/*animation: my-first-animation 1s infinite; 경우 공통이면
+위에 div에 추가해서 하나로 묶어도 된다*/
+
+
+@keyframes my-first-animation {
+  0% {
+    font-size: 10px;
+  }
+
+  50% {
+    width: 250px;
+    font-size: 40px;
+  }
+
+  100% {
+
+    font-size: 10px;
+  }
+}
