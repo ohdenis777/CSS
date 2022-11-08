@@ -1,0 +1,74 @@
+/* 1. display (container 속성) *
+
+/* grid layout은 container 안에 있는 형제들을
+차례대로 정리해놓는것이다. */
+
+.container {
+  border: 5px dashed orange;
+
+  display: inline-grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  width: 150px;
+
+}
+
+.item {
+  background-color: antiquewhite;
+  border: 3px solid blue;
+  font-size: 30px;
+}
+
+/* 2. grid-temple-colums(열)
+      grif-temple-rows (행) 
+*/
+
+.container2 {
+  border: 5px dashed rgb(128, 19, 44);
+
+  display: grid;
+
+  grid-template-columns: 80px 80px 80px;
+  /* 의미: 3열 각각 80px 80px 80px 로 */
+
+  grid-template-rows: 100px 100px 60px;
+  /* 의미: 3행 각각 100px 100px 60px 로 */
+
+  width: 300px;
+  height: 300px;
+
+}
+
+.item2 {
+  background-color: antiquewhite;
+  border: 3px solid rgb(58, 155, 210);
+  font-size: 30px;
+}
+
+
+/* 3. grid-temple-colums(열)
+      grif-temple-rows (행) 
+    의 다른 예시 fr, repeat(몇번,px)
+*/
+.container3 {
+  border: 5px dashed rgb(128, 19, 44);
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+  /* 비율을 설정한다. 2:1: */
+  grid-template-rows: repeat(4, 100px);
+  /* 100px를 4번 설정한다 */
+
+
+  width: 300px;
+  height: 500px;
+
+}
+
+.item3 {
+  background-color: antiquewhite;
+  border: 3px solid rgb(58, 155, 210);
+  font-size: 30px;
+}
