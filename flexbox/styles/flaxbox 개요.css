@@ -4,7 +4,9 @@
 .container {
   border: 5px dashed orange;
 
-
+  display: flex;
+  /*display: flex;추가하여 박스들이 가로로
+   유연하게 만들어짐*/
 }
 
 .item {
