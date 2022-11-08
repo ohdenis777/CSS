@@ -1,0 +1,27 @@
+.container {
+  width: 400px;
+  height: 400px;
+  border: 5px dashed rgb(128, 19, 44);
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  /* (3열 1:1:1) */
+  grid-template-rows: repeat(4, 1fr);
+  /* (3행 1:1:1) */
+  column-gap: 20px;
+  /* 열의 간격 */
+  row-gap: 40px;
+  /* 행의 간격 */
+
+  /*  단축기는 gap: row colun ; */
+
+
+
+}
+
+.item {
+  background-color: antiquewhite;
+  border: 3px solid rgb(58, 155, 210);
+  font-size: 30px;
+}
