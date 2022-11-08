@@ -110,3 +110,13 @@ item들로 빈공간을 채우는데 사용된다.
 .item3:nth-child(3) {
   flex-grow: 3;
 }
+
+/* flex 단축 속성 */
+
+/*  flex: grow  shrink  basis 
+
+만약 숫자 하나면 쓰면 그건 grow 값이다.
+하지만!! 중요한건 숫자 하나만 작성했을때 
+basis의 값은 초기값 auto가 아닌 0이 된다.
+
+따라서 flex:1을 하면 item들의 크기가 똑같이 같은 비율로 나타난다*/
