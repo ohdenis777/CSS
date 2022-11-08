@@ -1,0 +1,29 @@
+/* flex-direction (container 속성)
+특징: 1. 주축의 위치 설정
+2.main(왼쪽에서 오른쪽), 주축(위에서 아래)의 설정 
+방향을 거꾸로 설정할 수 있다.
+*/
+
+/* 우리가 flex를 공부할때 container 아니면 item에 들어갈수
+있는 속성인지 구분하면서 공부해야한다.
+ */
+
+.container {
+  border: 5px dashed orange;
+
+  display: flex;
+  flex-direction: row-reverse;
+  /*flex-direction: row-reverse;를 사용하여
+  주축의 방향을 변경함*/
+}
+
+
+.item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  /*간격 띄우기*/
+  background-color: blue;
+  border: 5px solid green;
+  font-size: 30px;
+}
