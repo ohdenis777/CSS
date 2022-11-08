@@ -1,0 +1,26 @@
+/* grid-auto-rows , grid-auto-columns  */
+
+.container {
+
+  border: 5px dashed rgb(128, 19, 44);
+
+  display: grid;
+
+  grid-template-columns: 50px 150px 100px;
+
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-auto-rows: 200px;
+  /* 원래 칸에 해당되지 않고 넘치는 rows 태그들을 200px 고정시킨다. */
+  grid-auto-columns: 400px;
+
+
+
+
+}
+
+.item {
+  background-color: antiquewhite;
+  border: 3px solid rgb(58, 155, 210);
+  font-size: 30px;
+}
