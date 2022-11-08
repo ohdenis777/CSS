@@ -1,0 +1,38 @@
+/* justify-content (container 속성) 
+특징: 주축을 변경할 수 있다.
+
+주의: flex-direction 에 따라 변경되므로
+잘 확인해야한다.*/
+
+.container {
+
+  border: 5px dashed orange;
+
+  display: flex;
+
+  flex-direction: row-reverse;
+  /*item 거꾸로*/
+
+  justify-content: flex-end;
+  /*주축이 끝이 됨 */
+  /* justify-content: center;
+  justify-content: space-between; */
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  /*간격 띄우기*/
+  background-color: blue;
+  border: 5px solid green;
+  font-size: 30px;
+}
+
+.container:nth-child(1) {
+  justify-content: space-between;
+}
+
+.container:nth-child(2) {
+  justify-content: space-around
+}
