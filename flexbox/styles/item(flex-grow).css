@@ -1,0 +1,38 @@
+/* 1. flex-grow  
+특징: 사용자가 페이지를 가로나 세로로 늘렸을때
+item 옆에 빈공간이 보일것이다.
+item들로 빈공간을 채우는데 사용된다*/
+
+
+.container {
+  height: 200px;
+  border: 5px dashed orange;
+
+  display: flex;
+
+}
+
+
+.item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  /*간격 띄우기*/
+  background-color: blue;
+  border: 5px solid green;
+  font-size: 30px;
+
+  /* flex-grow: 1; */
+  /* 이럴 경우 모든 item들이 1:1:1:1:1 비율을 갖게됨*/
+
+}
+
+.item:nth-child(2) {
+  flex-grow: 2;
+}
+
+.item:nth-child(3) {
+  flex-grow: 1;
+}
+
+/*flex grow는 비율을 나타낸다.*/
