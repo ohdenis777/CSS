@@ -1,6 +1,11 @@
 /* flexbox 개요 
 특징: 박스들을 유연하게 만든다.*/
 
+/* flex 용어 정리 
+1. flex container:아이템들은 감싸는 부모 영역
+2. flex item 내부 정렬을 위해 쓰일 아이템, 자식요소
+*/
+
 .container {
   border: 5px dashed orange;
 
