@@ -14,7 +14,6 @@ color green(div에 적용한 다른 색깔) 을 설정했더라도
 /* animation-fill-mode : forward 사용하면 1~4번 진행.
 animation-fill-mode : backword 사용하면 2~4 번 진행.*/
 
-
 div {
   width: 100px;
   height: 100px;
