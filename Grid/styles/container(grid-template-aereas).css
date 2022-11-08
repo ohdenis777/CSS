@@ -1,0 +1,46 @@
+/* grid-temple-aereas */
+
+.container {
+  border: 5px dashed rgb(128, 19, 44);
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  /* (5열 1:1:1:1:1) */
+  grid-template-rows: repeat(3, 1fr);
+  /* (3행 1:1:1) */
+  grid-template-areas:
+    "hl hl hl hl hl"
+    "cm cm cm et et"
+    "be be be be be";
+
+  /* .을 사용하면 비워둘수 있다*/
+
+
+
+  width: 400px;
+  height: 400px;
+
+}
+
+.item {
+  background-color: antiquewhite;
+  border: 3px solid rgb(58, 155, 210);
+  font-size: 30px;
+}
+
+.hola {
+  grid-area: hl;
+}
+
+.como {
+  grid-area: cm;
+}
+
+.estas {
+  grid-area: et;
+}
+
+.bien {
+  grid-area: be;
+}
