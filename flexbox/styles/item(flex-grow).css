@@ -71,3 +71,42 @@ item들로 빈공간을 채우는데 사용된다.
 .item2:nth-child(3) {
   flex-shrink: 3;
 }
+
+
+/* 3. flex-basis 
+특징: item들의 크기를 정확한 비율로 나타낸다.
+따라서, 정확한 비율로 나타내는flex-basis :0;  을 많이 사용한다.*/
+
+.container33 {
+  height: 200px;
+  border: 5px dashed orange;
+
+  display: flex;
+}
+
+
+.item3 {
+
+  height: 50px;
+  margin: 5px;
+  /*간격 띄우기*/
+  background-color: blue;
+  border: 3px solid green;
+  font-size: 30px;
+
+  flex-basis: 0;
+  /*flex-basis: 0;를 사용하여 밑에 item들이
+  정확한 비율로 나온다.*/
+}
+
+.item3:nth-child(1) {
+  flex-grow: 5;
+}
+
+.item3:nth-child(2) {
+  flex-grow: 1;
+}
+
+.item3:nth-child(3) {
+  flex-grow: 3;
+}
