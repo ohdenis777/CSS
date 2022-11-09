@@ -1,0 +1,11 @@
+@media screen and (max-width: 300px) {
+
+  body {
+    background-color: pink;
+  }
+
+}
+
+/* 뷰포트에서 개발자모드를 열고  개발자모드의 크기를
+늘려 뷰포트 가로 크기가 300px 이하가 되면 화면이
+핑크색으로 변한다.*/
