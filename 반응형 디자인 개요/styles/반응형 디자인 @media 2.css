@@ -1,0 +1,31 @@
+/* @media screen and (min-width: 300px) {
+
+  body {
+    background-color: pink;
+  }
+
+} */
+
+/* ↑ 뷰포트에서 개발자모드를 열고  개발자모드의 크기를
+늘려 뷰포트 가로 크기가 300px 이상되면 화면이
+핑크색으로 변한다.*/
+
+@media (min-width: 250px) and (max-width: 300px) {
+
+  body {
+    background-color: pink;
+  }
+}
+
+/*  가로 250px~300px 핑크색 적용. */
+
+
+@media screen and (orientation: landscape) {
+
+  body {
+    background-color: blue;
+  }
+}
+
+/*  (orientation: landscape)는 가로모드를 뜻하며
+가로모드로 변경하면 blue색으로 바뀐다. */
