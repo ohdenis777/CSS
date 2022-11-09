@@ -1,0 +1,41 @@
+/* grid-aerea */
+
+.container {
+  width: 100%;
+  height: 100%;
+  border: 4px dashed orange;
+
+  display: grid;
+
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-areas:
+    "denisvamos denisvamos denisvamos"
+    "denisvamos denisvamos denisvamos";
+}
+
+.item {
+  background-color: aqua;
+  border: 4px solid blue;
+  font-size: 24px;
+}
+
+.item:first-child {
+  background-color: blueviolet;
+
+  /*1. grid-row: 1 / span 2;
+  /* span 은 칸 수를 의미*/
+  /*grid-column: 1 / span 3;*/
+
+  /*2. grid-area: 1 / 1 / span 2/ span 3; */
+  /*row start / colomn start / row end / column end */
+
+}
+
+/* 다른 방법*/
+.denis {
+  grid-area: denisvamos;
+}
+
+/* 위에 container에 grid-template-areas:추가해야함 */
