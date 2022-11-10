@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  /* 1. 이거를 설정안할 경우:
+  box의 가로간격 : 200px + 3px border세로 + 3px border가로
+  
+  2. 설정할 경우
+   box의 가로간격 : 200px로 고정된다.*/
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* 왼쪽에서 오른쪽으로 */
+}
+
+
+body {
+  background-color: rgb(240, 236, 232);
+}
+
+.container {
+  background-color: rgb(53, 113, 225);
+  max-width: 768px;
+  min-height: 100vh;
+  margin: 0 auto;
+  /* 양쪽에 여백이 생기면서 center(가운데)로 모인다. */
+}
+
+nav {
+  background-color: orangered;
+  color: white;
+
+  flex-basis: 120px;
+}
+
+.containerbox {
+  background-color: aquamarine;
+  flex-grow: 1;
+  /* .containerbox 기준으로 나머지 꽊차게 한다. */
+  display: flex;
+
+  flex-wrap: wrap;
+  /* 박스들이 행,열로 정렬된다. 및 /* flex - wrap를 사용하여
+   item들의 크기 및 속성을 유지시킨다. */
+}
+
+
+
+.box {
+  border: 3px solid orange;
+  background-color: blanchedalmond;
+
+  border-radius: 5px;
+
+  min-height: 150px;
+  /*  사용자가 페이지를 줄여도 박스 크기가 150px 크기 미만으로 줄어들지 않음 */
+
+  width: 50%;
+  /* flex-basis: 50%도 가능 */
+  flex-grow: 1;
+  /* 박스7번이 꽉차게 만든다. */
+}
+
+
+footer {
+  min-height: 50px;
+  background-color: rgb(42, 133, 98);
+  border: 3px solid yellow;
+  flex-grow: 1;
+  /* <footer> 기준으로 나머지 꽊차게 한다. */
+  flex-basis: 100%;
+  /* 박스를 더 추가해도 footer 영역에 들어오지 못한다. */
+}
+
+.box:nth-child(2n) {
+  border-color: blue;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* 768px 넘으면 세로로 넘어감 */
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .container {
+    flex-direction: column;
+    /* 468px 넘으면 세로로 넘어감 */
+  }
+}
